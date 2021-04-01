@@ -44,6 +44,10 @@ class Nsfw(commands.Cog):
         embed = discord.Embed(description="{} did the big sex with {}!".format(ctx.message.author.mention, user.mention))
         await ctx.send(embed=embed)
 
+    @commands.command(hidden=True)
+@commands.is_nsfw()
+    async def Hoe(self, ctx):
+    await ctx.send(https://hosstools.com/wp-content/uploads/2020/10/field-hoe.jpg.)
 
 def setup(bot):
     bot.add_cog(Nsfw(bot))
